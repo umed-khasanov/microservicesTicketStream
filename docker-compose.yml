@@ -1,0 +1,16 @@
+services:
+  postgres-db:
+    image: postgres:15
+    container_name: unique_ticket_db
+    environment:
+      POSTGRES_USER: umed_admin
+      POSTGRES_PASSWORD: super_password
+      POSTGRES_DB: ticket_system
+    ports:
+      - "5433:5432"
+    volumes:
+      - unique_postgres_data:/var/lib/postgresql/data
+
+volumes:
+  unique_postgres_data:
+
