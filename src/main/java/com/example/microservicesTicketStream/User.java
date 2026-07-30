@@ -1,6 +1,7 @@
 package com.example.microservicesTicketStream;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,7 +22,7 @@ public class User {
     private String firstName;
     private String lastName;
 
-    @Column(name = "college_email", unique = true, nullable = false)
+    @Column(name = "email", unique = true, nullable = false)
     private String email;
 
     @Column(name = "phone_number", unique = true, nullable = false)
