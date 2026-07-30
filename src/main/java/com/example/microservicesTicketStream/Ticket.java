@@ -2,10 +2,17 @@ package com.example.microservicesTicketStream;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Ticket {
 
     @Id
@@ -23,8 +30,4 @@ public class Ticket {
     private String status = "PENDING";
 
     private LocalDate createdAt = LocalDate.now();
-
-    public Ticket() {}
-
-
 }
