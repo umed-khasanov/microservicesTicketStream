@@ -24,12 +24,8 @@ public class User {
 
     @Column(name = "email", unique = true, nullable = false)
     private String email;
+    private String password;
 
-    @Column(name = "phone_number", unique = true, nullable = false)
-    @Pattern(
-            regexp = "^\\+353(83|85|87|89)\\d{7}$",
-            message = "Invalid Irish mobile number format"
-    )
     private String phoneNumber;
 
     @Column(name = "date_of_birth")
