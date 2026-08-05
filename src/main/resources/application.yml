@@ -1,9 +1,10 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/ticket_system
-    username: umed_admin
-    password: super_password
+    url: jdbc:postgresql://localhost:5434/ticket_stream # Сменили порт на 5434
+    username: postgres
+    password: rootPassword
     driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -12,3 +13,9 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
+
+      kafka:
+        bootstrap-servers: localhost:9092
+        producer:
+          key-serializer: org.apache.kafka.common.serialization.StringSerializer
+          value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
