@@ -1,5 +1,9 @@
-package com.example.microservicesTicketStream;
+package com.example.microservicesTicketStream.service;
 
+import com.example.microservicesTicketStream.entity.Event;
+import com.example.microservicesTicketStream.entity.Ticket;
+import com.example.microservicesTicketStream.entity.User;
+import com.example.microservicesTicketStream.repository.TicketRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.math.BigDecimal;

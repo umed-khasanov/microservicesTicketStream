@@ -1,5 +1,7 @@
-package com.example.microservicesTicketStream;
+package com.example.microservicesTicketStream.service;
 
+import com.example.microservicesTicketStream.entity.Event;
+import com.example.microservicesTicketStream.repository.EventRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;

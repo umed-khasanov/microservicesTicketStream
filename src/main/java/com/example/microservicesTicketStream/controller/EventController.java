@@ -1,7 +1,7 @@
 package com.example.microservicesTicketStream.controller;
 
-import com.example.microservicesTicketStream.Event;
-import com.example.microservicesTicketStream.EventService;
+import com.example.microservicesTicketStream.entity.Event;
+import com.example.microservicesTicketStream.service.EventService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;

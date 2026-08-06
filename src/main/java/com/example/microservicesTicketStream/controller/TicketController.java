@@ -1,7 +1,7 @@
 package com.example.microservicesTicketStream.controller;
 
-import com.example.microservicesTicketStream.Ticket;
-import com.example.microservicesTicketStream.TicketService;
+import com.example.microservicesTicketStream.entity.Ticket;
+import com.example.microservicesTicketStream.service.TicketService;
 import com.example.microservicesTicketStream.dto.TicketPaymentDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

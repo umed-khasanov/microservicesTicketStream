@@ -1,4 +1,4 @@
-package com.example.microservicesTicketStream;
+package com.example.microservicesTicketStream.entity;
 
 
 
